@@ -1,0 +1,113 @@
+body {
+    background-color: #414141;
+    font-family: "Be Vietnam Pro";
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    border: 1px yellow solid;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #383838;
+    outline: none;
+}
+
+input {
+    width: 70%;
+    height: 5%;
+    margin: 10px;
+    position: relative;
+    right: 0px;
+    background-color: #383838;
+    font-size: 140%;
+    color: red;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 0.5px red solid;
+}
+
+label {
+    font-size: 140%;
+    color: red;
+}
+
+#submitBtn {
+    width: 30%;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: white;
+    background-color: #7e0000;
+    border: 2px red solid;
+    margin-left: 35%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#submitBtn:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+#search {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30%;
+    height: 40px;
+    background-color: #5c5c5c;
+    border: none;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    background-color: #383838;
+    padding: 10px;
+}
+
+th {
+    position: relative;
+    top: 0px;
+    background-color: rgb(105, 128, 0);
+}
+
+tr {
+    margin: -10px;
+}
+
+td {
+    margin: -10px;
+    background-color: #5c5c5c;
+    border: 1px solid black;
+    color: white;
+    font-size: large;
+}
+
+#show_records {
+    height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: auto;
+    width: 80%;
+    margin-top: 15px;
+    border: 2px solid black;
+}
+
+.delete {
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+
+.delete:hover {
+    cursor: pointer;
+    background-color: rgb(133, 0, 0);
+}
+
+#heading {
+    position: sticky;
+    top: 0px;
+}
