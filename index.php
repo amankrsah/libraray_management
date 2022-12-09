@@ -14,14 +14,12 @@
 
 
 
-    <center><h1 style="color:#bb0000">LIBRARY MANAGEMENT</h1></center>
+    <center><h1 style="color:#EC625F"><u>LIBRARY MANAGEMENT</u></h1></center>
     <h2 id = "msg"></h2>
     <input type="text" id="search" placeholder="Search here..!">
     <div class="container">
-        <label for="fname">Enter First name : </label>
+        <label for="fname">Enter Name : </label>
             <input type="text" id="fname"><br>
-           <label for="lname">Enter Last name : </label>
-            <input type="text" id="lname"><br>
             <label for="bname">Enter Book name :</label>
             <input type="text" id="bname"><br>
             <button id="submitBtn">SUBMIT</button>
@@ -100,7 +98,7 @@
     $(document).ready(function(){
         readRecords();
     $("#submitBtn").click(function(){
-        if ($("#fname").val()=="" || $("#lname").val()=="" ||$("#bname").val()=="") {
+        if ($("#fname").val()=="" || $("#bname").val()=="") {
             alert("Please fill all DATA");   
         }else{
                 $.ajax({
@@ -108,14 +106,12 @@
                     type:'POST',
                     data:{
                     fname:$("#fname").val(),
-                    lname:$("#lname").val(),
                     date:$("#date").val(),
                     bname:$("#bname").val(),
                 },
                 success:function(data){
                     $("#msg").html(data);
                     $("#fname").val(""),
-                    $("#lname").val(""),
                     $("#date").val(""),
                     $("#bname").val(""),
                     alert("Data inserted succcessfully");

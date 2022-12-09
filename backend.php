@@ -4,14 +4,12 @@
             die("Cannot connet to DATABASE");
         }
 
-    if (isset($_POST['fname']) &&  isset($_POST['lname']) && isset($_POST['bname'])){
-
-        $lname=$_POST['lname'];     
+    if (isset($_POST['fname']) && isset($_POST['bname'])){
         $fname=$_POST['fname'];     
 
         $bname=$_POST['bname'];
 
-        $qry = "INSERT INTO `lib` (`fname`, `lname`, `bname`) VALUES ('$fname', '$lname', '$bname')";
+        $qry = "INSERT INTO `lib` (`fname`, `bname`) VALUES ('$fname', '$bname')";
         $result = mysqli_query($conn,$qry);
 
 
@@ -26,7 +24,7 @@
    
     if(isset($_POST['search_val'])){
         $search_val = $_POST['search_val'];
-        $searchQuery = "SELECT * FROM `lib` WHERE fname LIKE '%$search_val%' OR lname LIKE '%$search_val%' OR bname LIKE '%$search_val%'";
+        $searchQuery = "SELECT * FROM `lib` WHERE fname LIKE '%$search_val%' OR bname LIKE '%$search_val%'";
         $result = mysqli_query($conn,$searchQuery);
         $data="";
         if (mysqli_num_rows($result)>0) {
@@ -35,7 +33,7 @@
                 $data.='<tr>
                 <td style="width:5%">'.$number.'</td>
                 <td style="width:5%">'.$row['uid'].'</td>
-                <td style="width:25%">'.$row['fname'].' '.$row['lname'].'</td>
+                <td style="width:25%">'.$row['fname'].'</td>
                 <td style="width:15%">'.$row['date'].'</td>
                 <td style="width:35%">'.$row['bname'].'</td>
                 <td class = "delete" id = "deleteBtn" onclick="deleteRecords('.$row['uid'].')">DELETE</td>
@@ -61,7 +59,7 @@
                 $data.='<tr>
                 <td style="width:5%">'.$number.'</td>
                 <td style="width:5%">'.$row['uid'].'</td>
-                <td style="width:25%">'.$row['fname'].' '.$row['lname'].'</td>
+                <td style="width:25%">'.$row['fname'].'</td>
                 <td style="width:15%">'.$row['date'].'</td>
                 <td style="width:35%">'.$row['bname'].'</td>
                 <td class = "delete" id = "deleteBtn" onclick="deleteRecords('.$row['uid'].')">DELETE</td>

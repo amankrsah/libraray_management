@@ -1,36 +1,36 @@
 body {
-    background-color: #414141;
+    background-color: #1d3e53;
     font-family: "Be Vietnam Pro";
 }
 
 .container {
     width: 60%;
     margin: auto;
-    border: 1px yellow solid;
+    border: 1px #95c9d4 solid;
     padding: 40px;
     border-radius: 10px;
-    background-color: #383838;
+    background-color: #254b62;
     outline: none;
 }
 
 input {
-    width: 70%;
+    width: 100%;
     height: 5%;
     margin: 10px;
     position: relative;
     right: 0px;
-    background-color: #383838;
+    background-color: #66929c;
     font-size: 140%;
-    color: red;
-    border-left: none;
+    color: #1e2324;
+    /* border-left: none;
     border-right: none;
-    border-top: none;
-    border-bottom: 0.5px red solid;
+    border-top: none; */
+    border: 0.5px #476d7c solid;
 }
 
 label {
     font-size: 140%;
-    color: red;
+    color: #65dbf5;
 }
 
 #submitBtn {
@@ -39,8 +39,8 @@ label {
     margin-top: 10px;
     border-radius: 7px;
     color: white;
-    background-color: #7e0000;
-    border: 2px red solid;
+    background-color: #233136;
+    border: 2px #4f6d74 solid;
     margin-left: 35%;
     font-size: 100%;
     font-weight: bold;
@@ -48,7 +48,7 @@ label {
 
 #submitBtn:hover {
     cursor: pointer;
-    background-color: red;
+    background-color: #4b8491;
 }
 
 #search {
@@ -57,21 +57,22 @@ label {
     right: 10px;
     width: 30%;
     height: 40px;
-    background-color: #5c5c5c;
+    background-color: #77abb7;
     border: none;
+    padding: 5px;
     border-radius: 10px;
 }
 
 table {
     width: 100%;
-    background-color: #383838;
+    background-color: #254b62;
     padding: 10px;
 }
 
 th {
     position: relative;
     top: 0px;
-    background-color: rgb(105, 128, 0);
+    background-color: #9bc5ce;
 }
 
 tr {
@@ -80,7 +81,7 @@ tr {
 
 td {
     margin: -10px;
-    background-color: #5c5c5c;
+    background-color: #366c8d;
     border: 1px solid black;
     color: white;
     font-size: large;
@@ -93,7 +94,7 @@ td {
     margin: auto;
     width: 80%;
     margin-top: 15px;
-    border: 2px solid black;
+    border: 2px solid #5d8791;
 }
 
 .delete {
